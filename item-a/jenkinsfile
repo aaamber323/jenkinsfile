@@ -4,7 +4,9 @@ node {
     }
     stage('Build') {
         // Run the maven build
-        echo 'build...'
+        echo 'build1...'
+	echo 'build2...'
+	echo 'build3...'
     }
     stage('depploy') {
         echo 'deploy...'
