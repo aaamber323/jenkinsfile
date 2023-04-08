@@ -1,0 +1,12 @@
+node {
+    stage('checkout') { 
+        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'git@github.com:aaamber323/cloudcost-demo.git']])
+    }
+    stage('Build') {
+        // Run the maven build
+        echo 'build...'
+    }
+    stage('depploy') {
+        echo 'deploy...'
+    }
+}
